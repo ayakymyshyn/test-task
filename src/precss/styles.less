@@ -1,0 +1,133 @@
+@import "project.less";
+
+.reset();
+
+body {
+	border-top: 5px solid @blue; 
+	font-family: 'Circe', Arial, sans-serif;
+	color: @black;
+	header {
+		.wrapper();
+		display: flex;
+		align-items: center;
+		padding-top: 55px;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		.md-block({
+			flex-direction: column;
+			justify-content: center;
+			});
+		.logo {
+			.md-block({
+				margin-bottom: 30px;
+				}); 
+		}
+		  .nav-content {
+		  	display: flex;
+		  	align-items: center;
+		  	flex-wrap: wrap;
+		  		.phone-contacts {
+		  			margin-right: 60px;
+		  			display: flex;
+		  			flex-wrap: wrap;
+		  			align-items: center;
+		  			.sm-block({
+		  				margin: 0 auto;
+		  				});
+		  			.xs-block ({
+		  				flex-direction: column;
+		  				justify-content: center;
+		  				});
+		  			.call-me-button {
+		  				background-color: @blue;
+		  				padding: 15px 30px;
+		  				text-decoration: none;
+		  				color: @white;
+		  				text-transform: uppercase;
+		  				border-radius: 25px;
+		  				font-size: 12px;
+		  				margin: 0 40px;
+		  				.xs-block({
+		  					margin: 5px 0;
+		  					order: 1;
+		  					});
+		  					&:hover {
+		  						background-color: #379be0;
+		  					}
+		  			}
+					.phone-number {
+						font-size: 20px;
+					}
+		  		}
+				.social-icons {
+					.social-icon {
+						padding: 10px;
+					}
+					.sm-block({
+		  				margin: 30px auto;
+		  			});
+				}
+		  }
+	}
+}
+
+#repairing {
+	.wrapper();
+	nav {
+		text-align: center;
+		margin: 55px 0;
+		font-weight: bold;
+			a {
+				text-decoration: none;
+				color: @black;
+			}
+			span {
+				color: @blue;
+				font-weight: bold;
+				font-size: 16px;
+				padding: 0 15px;
+			}
+	}
+
+	h2 {
+		font-weight: bold;
+		font-size: 70px;
+		text-align: center;
+		line-height: 65px;
+		margin-bottom: 90px;
+		.md-block({
+			font-size: 50px;
+			});
+	}
+	
+	span {
+		font-size: 50px;
+		.md-block({
+			font-size: 30px;
+			});
+	}
+
+	.repair-items {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+			.item {
+				padding: 0 30px 90px 30px;
+				flex-basis: 25%;
+				.sm-block({
+					flex-basis: 40%;
+					});
+				.xs-block({
+					flex-basis: 80%;
+					});
+					&:hover p{
+						color: @blue;
+					}
+					p {
+						font-size: 20px;
+						text-align: center;
+						margin-top: 35px;
+					}
+			}
+	}
+}
