@@ -1,2 +1,2 @@
 # test-task
-Test task 
+Simple HTML template
